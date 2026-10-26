@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Clima Pro 🌤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>🌤️ Clima Pro en Vivo</h1>
+        <p class="subtitulo">Con historial, conversión de unidades y frases picantes.</p>
+
+        <!-- Formulario de búsqueda -->
+        <div class="buscador">
+            <input type="text" id="ciudad-input" placeholder="Ej: Buenos Aires, Madrid, Tokio..." autocomplete="off">
+            <button id="boton-buscar">Buscar 🔍</button>
+        </div>
+
+        <!-- Historial de ciudades recientes (arranca oculto) -->
+        <div id="seccion-historial" class="oculto">
+            <p class="titulo-historial">Búsquedas recientes:</p>
+            <div id="lista-historial" class="lista-historial"></div>
+        </div>
+
+        <!-- Cartel de carga / error -->
+        <p id="mensaje-estado" class="oculto"></p>
+
+        <!-- Resultado del clima -->
+        <div id="resultado-clima" class="resultado oculto">
+            <h2 id="nombre-ciudad">--</h2>
+            
+            <div class="temperatura-contenedor">
+                <div class="temperatura-caja">
+                    <span id="temperatura">--</span><span id="simbolo-unidad">°C</span>
+                </div>
+                <!-- Botón para cambiar unidades (°C / °F) -->
+                <button id="boton-unidad">Cambiar a °F 🔄</button>
+            </div>
+
+            <p id="viento">Viento: -- km/h</p>
+            
+            <!-- Frase dinámica según la temperatura -->
+            <p id="frase-clima" class="frase-clima">--</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

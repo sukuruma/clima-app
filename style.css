@@ -1,0 +1,120 @@
+/* Reseteo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo oscuro general */
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Tarjeta principal */
+.card {
+    background-color: #1e293b;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid #334155;
+}
+
+/* Títulos y textos */
+h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #38bdf8;
+}
+
+.subtitulo {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+/* Sección del buscador (Input + Botón) */
+.buscador {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    background-color: #0f172a;
+    border: 1px solid #475569;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #38bdf8;
+}
+
+button {
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+    color: white;
+    border: none;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+button:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+/* Clase auxiliar para ocultar elementos */
+.oculto {
+    display: none;
+}
+
+/* Mensaje de estado (carga o error) */
+#mensaje-estado {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #facc15;
+}
+
+/* Caja de resultados del clima */
+.resultado {
+    margin-top: 20px;
+    background-color: #0f172a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+
+.resultado h2 {
+    font-size: 20px;
+    color: #f8fafc;
+    margin-bottom: 10px;
+}
+
+.temperatura-caja {
+    font-size: 36px;
+    font-weight: bold;
+    color: #38bdf8;
+    margin-bottom: 6px;
+}
+
+#viento {
+    font-size: 14px;
+    color: #94a3b8;
+}
